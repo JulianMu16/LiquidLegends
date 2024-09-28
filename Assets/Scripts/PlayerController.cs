@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : Health
 {
     public float moveSpeed;
     float speedX, speedY;
@@ -17,7 +17,12 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        health = 5;
+        characterType = 'p';
     }
+    
+    
+
 
     // Update is called once per frame
     void Update()

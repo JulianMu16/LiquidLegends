@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OutlawController : MonoBehaviour
+public class OutlawController : Health
 {
     public Transform player;          // Reference to the player character
     public Transform soaker;          // Reference to the enemy's gun
@@ -10,9 +10,14 @@ public class OutlawController : MonoBehaviour
     public float fireRate = 1.0f;     // How often the enemy shoots
     public float bubbleSpeed = 7f;    // Speed of the enemy's bubbles
     private float nextFireTime = 0f;  // Timer to control fire rate
-
+    private void Start()
+    {
+        health = 5;
+        characterType = 'b';
+    }
     void Update()
     {
+        
         HandleShooting();
     }
 
