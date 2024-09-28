@@ -193,6 +193,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00a42f1803461c04eaaf7acb60bb30d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  characterType: 45
+  health: 0
   player: {fileID: 0}
   soaker: {fileID: 4896526694931128535, guid: d6e64677301bf264d8ae0ddb8d12646e, type: 3}
   bubblePrefab: {fileID: 5374255659774901686, guid: 708bcba82ecae734e8385c122a6dde45, type: 3}
