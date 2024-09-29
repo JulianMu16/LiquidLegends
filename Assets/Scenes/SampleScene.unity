@@ -1151,7 +1151,7 @@ MonoBehaviour:
   player: {fileID: 1373253248}
   soaker: {fileID: 841932476}
   bubblePrefab: {fileID: 5374255659774901686, guid: 708bcba82ecae734e8385c122a6dde45, type: 3}
-  fireRate: 1
+  fireRate: 0.45
   bubbleSpeed: 7
 --- !u!1 &957843349
 GameObject:
@@ -2336,7 +2336,7 @@ PrefabInstance:
       objectReference: {fileID: 1373253248}
     - target: {fileID: 9129288167996713185, guid: f365f87cff3f82640af9996ee702f848, type: 3}
       propertyPath: fireRate
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9129288167996713185, guid: f365f87cff3f82640af9996ee702f848, type: 3}
       propertyPath: bubblePrefab
