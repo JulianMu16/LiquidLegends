@@ -1100,7 +1100,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -1112,7 +1112,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!95 &841932478
 Animator:
   serializedVersion: 5
@@ -1153,6 +1153,8 @@ MonoBehaviour:
   bubblePrefab: {fileID: 5374255659774901686, guid: 708bcba82ecae734e8385c122a6dde45, type: 3}
   fireRate: 0.45
   bubbleSpeed: 7
+  verticalMoveSpeed: 1
+  verticalMoveDistance: 2
 --- !u!1 &957843349
 GameObject:
   m_ObjectHideFlags: 0
