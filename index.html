@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daniel Morris - Game Design Portfolio</title>
+    <title>Julian and Daniel's MHacks Portfolio</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -21,51 +21,52 @@
             background: #333;
             color: #fff;
             padding-top: 30px;
-            min-height: 70px;
+            padding-bottom: 10px;
             border-bottom: #77d4d4 3px solid;
         }
-        header a, header h1, header p {
-            color: #fff;
-        }
         header h1 {
-            float: left;
             margin: 0;
             padding: 0;
-        }
-        header ul {
-            padding: 0;
-            list-style: none;
-        }
-        header li {
-            display: inline;
-            padding: 0 20px 0 20px;
-        }
-        header a:hover {
-            color: #77d4d4;
+            text-align: center;
         }
         .projects {
             margin: 20px 0;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .projects h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
         }
         .projects ul {
             padding: 0;
             list-style: none;
         }
         .projects li {
-            background: #fff;
+            background: #f9f9f9;
             margin-bottom: 10px;
             padding: 10px;
             border: #ddd 1px solid;
+            border-radius: 5px;
             transition: background 0.3s ease-in;
         }
         .projects a {
             text-decoration: none;
             color: #333;
+            font-weight: bold;
         }
         .projects a:hover {
             color: #77d4d4;
         }
         .projects li:hover {
-            background: #f9f9f9;
+            background: #fff;
+        }
+        .project-description {
+            margin: 20px 0;
+            line-height: 1.6;
         }
         footer {
             text-align: center;
@@ -85,29 +86,33 @@
     <div class="container">
         <section class="projects">
             <h2>Projects</h2>
-            
-                <li><a href="/MHacksSubmit.zip">Liquid Legends(Unity Original Game)</a></li>
+            <ul>
+                <li><a href="/MHacksSubmit.zip">Liquid Legends (Unity Original Game)</a></li>
                 <!-- Add more projects here -->
-            <p>Inspiration
-We wanted to see how good of a game we could make in 24 hours.
+            </ul>
 
-What it does
-It's a small indie game that we hope will charm players.
+            <div class="project-description">
+                <h3>Inspiration</h3>
+                <p>We wanted to see how good of a game we could make in 24 hours.</p>
 
-How we built it
-The backend was built in C# through Unity and assets were built in Piskel.
+                <h3>What it does</h3>
+                <p>It's a small indie game that we hope will charm players.</p>
 
-Challenges we ran into
-We ran into some hitbox and collision issues with the characters.
+                <h3>How we built it</h3>
+                <p>The backend was built in C# through Unity and assets were designed in Piskel.</p>
 
-Accomplishments that we're proud of
-Creating a soundtrack for the game.
+                <h3>Challenges we ran into</h3>
+                <p>We encountered some hitbox and collision issues with the characters.</p>
 
-What we learned
-How to use AI in video game development
+                <h3>Accomplishments that we're proud of</h3>
+                <p>Creating an original soundtrack for the game.</p>
 
-What's next for Liquid Legends
-We will be hosting it on steam</p>
+                <h3>What we learned</h3>
+                <p>How to integrate AI in video game development.</p>
+
+                <h3>What's next for Liquid Legends</h3>
+                <p>We plan to host it on Steam.</p>
+            </div>
         </section>
     </div>
     <footer>
