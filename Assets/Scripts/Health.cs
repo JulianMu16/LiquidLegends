@@ -22,7 +22,7 @@ public abstract class Health : MonoBehaviour
     public void Death() {
 
         //Program death maybe animation
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("TitleScreen");
 
     }
 

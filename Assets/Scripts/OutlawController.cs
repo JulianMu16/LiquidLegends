@@ -14,8 +14,7 @@ public class OutlawController : Health
     {
         health = 5;
         characterType = 'b';
-        GameObject bullet = GameObject.FindGameObjectWithTag("botBullet");
-        Physics2D.IgnoreCollision(bullet.GetComponent<Collider2D>(), GetComponent<Collider2D>());
+       
     }
     void Update()
     {
