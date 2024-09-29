@@ -28,4 +28,9 @@ public class BubbleController : MonoBehaviour
         float scale = 1 + Mathf.Sin(Time.time * oscillationSpeed) * scaleMagnitude;
         transform.localScale = new Vector3(scale, scale, 1); 
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Destroy(gameObject);
+    }
 }

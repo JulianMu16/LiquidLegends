@@ -14,6 +14,8 @@ public class OutlawController : Health
     {
         health = 5;
         characterType = 'b';
+        GameObject bullet = GameObject.FindGameObjectWithTag("botBullet");
+        Physics2D.IgnoreCollision(bullet.GetComponent<Collider2D>(), GetComponent<Collider2D>());
     }
     void Update()
     {
@@ -37,7 +39,7 @@ public class OutlawController : Health
     {
         // Create the bubble at the soaker's position
         GameObject bubble = Instantiate(bubblePrefab, soaker.position, soaker.rotation);
-
+        Physics2D.IgnoreCollision(bubble.GetComponent<Collider2D>(), GetComponent<Collider2D>());
         // Get the BubbleController script and initialize it with the direction
         BubbleController bubbleController = bubble.GetComponent<BubbleController>();
         Vector3 shootingDirection = (player.position - soaker.position).normalized;

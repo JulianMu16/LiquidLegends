@@ -19,6 +19,8 @@ public class PlayerController : Health
         spriteRenderer = GetComponent<SpriteRenderer>();
         health = 5;
         characterType = 'p';
+        GameObject bullet = GameObject.FindGameObjectWithTag("playerBullet");
+        Physics2D.IgnoreCollision(bullet.GetComponent<Collider2D>(), GetComponent<Collider2D>());
     }
     
     

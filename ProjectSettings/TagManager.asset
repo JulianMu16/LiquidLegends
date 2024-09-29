@@ -6,6 +6,8 @@ TagManager:
   tags:
   - botBullet
   - playerBullet
+  - player
+  - outlaw
   layers:
   - Default
   - TransparentFX
