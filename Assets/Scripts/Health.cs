@@ -19,7 +19,7 @@ public abstract class Health : MonoBehaviour
             Death();
         }
     }
-    public virtual void Death() {
+    public void Death() {
 
         //Program death maybe animation
         SceneManager.LoadScene("SampleScene");
@@ -27,7 +27,7 @@ public abstract class Health : MonoBehaviour
     }
 
 
-   public virtual void processDamage(){
+   public void processDamage(){
         TakeDamage();
     }
 
